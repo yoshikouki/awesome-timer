@@ -44,8 +44,14 @@ export const ClockFace = ({
   const ticks = generateTicks(size);
 
   const clockFaceRef = (svg: SVGSVGElement) => {
-    if (!svg) return;
-    setSize(svg.parentElement?.clientWidth || 0);
+    const resize = () => setSize(svg.parentElement?.clientWidth || 0);
+    resize();
+    window.addEventListener("resize", resize);
+    window.addEventListener("visibilitychange", resize);
+    return () => {
+      window.removeEventListener("resize", resize);
+      window.removeEventListener("visibilitychange", resize);
+    };
   };
 
   return (

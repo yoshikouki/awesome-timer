@@ -1,4 +1,4 @@
-import { Clock } from "./timer";
+import { Clock } from "@/features/clock";
 
 export default async function HomePage() {
   return (

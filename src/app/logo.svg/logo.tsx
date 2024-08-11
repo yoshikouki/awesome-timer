@@ -25,7 +25,7 @@ export const renderLogoSVG = async () => {
           fontSize: 300,
         }}
       >
-        HoN
+        ATi
       </div>
     </div>,
     {

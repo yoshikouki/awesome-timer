@@ -58,7 +58,7 @@ export const ClockFace = ({
     <svg
       width={size || 0}
       height={size || 0}
-      className={cn("stroke-black/20", className)}
+      className={cn("stroke-accent opacity-20", className)}
       ref={clockFaceRef}
     >
       <title>Clock Face</title>

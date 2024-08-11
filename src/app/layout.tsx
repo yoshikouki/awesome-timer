@@ -16,11 +16,9 @@ export default function RootLayout({
     <html
       lang="en"
       className="dark"
-      // For next-theme
-      suppressHydrationWarning
     >
       <body className={font.className}>
-      {children}
+        {children}
         <Footer />
       </body>
     </html>

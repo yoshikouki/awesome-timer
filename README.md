@@ -1,4 +1,4 @@
-# honon
+# awesome-timer
 
 Template for Next.js + Hono
 

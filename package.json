@@ -1,5 +1,5 @@
 {
-  "name": "honon",
+  "name": "awesome-timer",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,12 +19,8 @@
     "hono": "^4.4.9",
     "lucide-react": "^0.404.0",
     "next": "^15.0.0-rc.0",
-    "next-auth": "^5.0.0-beta.19",
-    "next-themes": "^0.3.0",
     "react": "^19.0.0-rc-58af67a8f8-20240628",
     "react-dom": "^19.0.0-rc-58af67a8f8-20240628",
-    "satori": "^0.10.13",
-    "swr": "^2.2.5",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },

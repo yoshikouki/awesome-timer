@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 
-export const title = "honon - Awesome App";
-export const description = "honon is an awesome app!";
+export const title = "Awesome Timer";
+export const description = "Awesome Timer!";
 
 export const metadata: Metadata = {
   title,

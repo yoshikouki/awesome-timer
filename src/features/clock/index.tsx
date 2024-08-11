@@ -31,7 +31,7 @@ export const Clock = () => {
   return (
     <div className="relative flex h-screen w-full flex-col items-start justify-center bg-gradient-to-b from-primary to-pink-500">
       <div
-        className={cn("z-50 mx-4 w-1/2 font-black text-[12vw] text-white")}
+        className={cn("z-50 mx-4 w-1/2 text-[12vw] text-white")}
         ref={timerRef}
       >
         {formatTime(time)}

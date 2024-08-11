@@ -22,7 +22,8 @@
     "react": "^19.0.0-rc-58af67a8f8-20240628",
     "react-dom": "^19.0.0-rc-58af67a8f8-20240628",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.167.1"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
@@ -32,6 +33,7 @@
     "@types/node": "^20.14.9",
     "@types/react": "npm:types-react@^19.0.0-alpha.3",
     "@types/react-dom": "npm:types-react-dom@^19.0.0-alpha.3",
+    "@types/three": "^0.167.1",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.5.2"

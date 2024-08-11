@@ -1,5 +1,6 @@
 "use client";
 
+import { NoSleep } from "@/features/no-sleep";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 
@@ -18,16 +19,11 @@ export const Clock = () => {
     const timerInterval = setInterval(() => {
       setTime(new Date());
     });
-    let wakeLock: WakeLockSentinel | null;
-    if (!("wakeLock" in navigator)) return;
-    (async () => {
-      wakeLock = await navigator.wakeLock.request("screen");
-    })();
-
+    const noSleep = new NoSleep();
+    noSleep.enable();
     return () => {
       clearInterval(timerInterval);
-      wakeLock?.release();
-      wakeLock = null;
+      noSleep.disable();
     };
   };
 

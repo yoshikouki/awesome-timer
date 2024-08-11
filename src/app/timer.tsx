@@ -6,7 +6,10 @@ export const Clock = () => {
     div.innerText = new Date().toString();
   };
   return (
-    <div className="text-2xl h-svh tabular-nums" ref={timerRef}>
+    <div
+      className="flex h-full w-full flex-col items-center justify-center text-2xl tabular-nums"
+      ref={timerRef}
+    >
       Loading...
     </div>
   );

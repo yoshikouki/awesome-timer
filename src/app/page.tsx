@@ -2,7 +2,7 @@ import { Clock } from "./timer";
 
 export default async function HomePage() {
   return (
-    <main className="flex flex-col items-center justify-center gap-10 py-40">
+    <main className="flex h-svh w-svw flex-col items-center justify-center">
       <Clock />
     </main>
   );

@@ -17,13 +17,23 @@ export const Clock = () => {
     const timerInterval = setInterval(() => {
       setTime(new Date());
     });
-    return () => clearInterval(timerInterval);
+    let wakeLock: WakeLockSentinel | null;
+    if (!("wakeLock" in navigator)) return;
+    (async () => {
+      wakeLock = await navigator.wakeLock.request("screen");
+    })();
+
+    return () => {
+      clearInterval(timerInterval);
+      wakeLock?.release();
+      wakeLock = null;
+    };
   };
 
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center bg-gradient-to-r from-purple-500 to-pink-500">
       <div
-        className="font-bold text-8xl text-white shadow-lg p-8 rounded-lg bg-white/10"
+        className="rounded-lg bg-white/10 p-8 font-bold text-8xl text-white shadow-lg"
         ref={timerRef}
       >
         {formatTime(time)}

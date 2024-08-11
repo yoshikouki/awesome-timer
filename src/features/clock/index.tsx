@@ -29,11 +29,9 @@ export const Clock = () => {
   };
 
   return (
-    <div className="relative flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-primary to-pink-500">
+    <div className="relative flex h-screen w-full flex-col items-start justify-center bg-gradient-to-b from-primary to-pink-500">
       <div
-        className={cn(
-          "z-50 mx-4 flex w-full items-center justify-center rounded-lg font-black text-[20vw] text-white shadow-lg",
-        )}
+        className={cn("z-50 mx-4 w-1/2 font-black text-[12vw] text-white")}
         ref={timerRef}
       >
         {formatTime(time)}

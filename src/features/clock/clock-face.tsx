@@ -8,7 +8,7 @@ type Tick = {
   y1: number;
   x2: number;
   y2: number;
-  strokeWidth: number;
+  tickWidth: number;
 };
 
 const generateTicks = (size: number | null): Tick[] => {
@@ -20,8 +20,8 @@ const generateTicks = (size: number | null): Tick[] => {
   for (let i = 0; i < 60; i++) {
     const angle = (i / 60) * 360;
     const radians = (angle * Math.PI) / 180;
-    // ティックの長さをサイズに応じて調整
     const tickLength = size * 0.03;
+    const tickWidth = size * 0.001;
 
     ticks.push({
       key: i,
@@ -29,7 +29,7 @@ const generateTicks = (size: number | null): Tick[] => {
       y1: center - radius * Math.cos(radians),
       x2: center + (radius - tickLength) * Math.sin(radians),
       y2: center - (radius - tickLength) * Math.cos(radians),
-      strokeWidth: size * 0.003,
+      tickWidth,
     });
   }
   return ticks;
@@ -52,7 +52,7 @@ export const ClockFace = ({
     <svg
       width={size || 0}
       height={size || 0}
-      className={cn("stroke-black/30", className)}
+      className={cn("stroke-black/20", className)}
       ref={clockFaceRef}
     >
       <title>Clock Face</title>
@@ -63,7 +63,7 @@ export const ClockFace = ({
           y1={tick.y1}
           x2={tick.x2}
           y2={tick.y2}
-          strokeWidth={tick.strokeWidth}
+          strokeWidth={tick.tickWidth}
         />
       ))}
     </svg>

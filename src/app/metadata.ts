@@ -13,21 +13,21 @@ export const metadata: Metadata = {
       url: "/logo.webp",
       sizes: "1200x1200",
       type: "image/webp",
-      color: "#FFFFFF",
+      color: "#fafaf9",
       fetchPriority: "high",
     },
     {
       url: "/icon-192x192.webp",
       sizes: "192x192",
       type: "image/webp",
-      color: "#FFFFFF",
+      color: "#fafaf9",
       fetchPriority: "auto",
     },
     {
       url: "/icon-512x512.webp",
       sizes: "512x512",
       type: "image/webp",
-      color: "#FFFFFF",
+      color: "#fafaf9",
       fetchPriority: "auto",
     },
   ],
@@ -62,5 +62,5 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#FFFFFF",
+  themeColor: "#fafaf9",
 };

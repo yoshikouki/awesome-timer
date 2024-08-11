@@ -45,14 +45,14 @@ export const ClockFace = ({
 
   const clockFaceRef = (svg: SVGSVGElement) => {
     if (!svg) return;
-    setSize(svg.clientWidth);
+    setSize(svg.parentElement?.clientWidth || 0);
   };
 
   return (
     <svg
       width={size || 0}
       height={size || 0}
-      className={cn("h-full w-full stroke-black/30", className)}
+      className={cn("stroke-black/30", className)}
       ref={clockFaceRef}
     >
       <title>Clock Face</title>

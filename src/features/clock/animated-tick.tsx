@@ -6,7 +6,7 @@ interface AnimatedClockProps {
 
 export const AnimatedTick: React.FC<AnimatedClockProps> = () => {
   return (
-    <div className="absolute inset-0">
+    <div className="absolute right-0 bottom-0 w-[150%]">
       <ClockFace className="animate-clock-tick" />
     </div>
   );

@@ -23,7 +23,7 @@
     "react-dom": "^19.0.0-rc-58af67a8f8-20240628",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
-    "three": "^0.167.1"
+    "three": "^0.169.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",

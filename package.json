@@ -30,7 +30,7 @@
     "@happy-dom/global-registrator": "^14.12.3",
     "@testing-library/react": "^16.0.0",
     "@types/bun": "^1.1.6",
-    "@types/node": "^20.14.9",
+    "@types/node": "^22.7.4",
     "@types/react": "npm:types-react@^19.0.0-alpha.3",
     "@types/react-dom": "npm:types-react-dom@^19.0.0-alpha.3",
     "@types/three": "^0.167.1",
